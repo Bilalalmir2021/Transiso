@@ -1,11 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+declare module 'react-simple-maps';
 
-declare module "react-simple-maps";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     unoptimized: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
